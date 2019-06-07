@@ -42,7 +42,7 @@ outReverb = zeros(lengthOfInReverb,1);
 
 %Here the signal in then processed with the reverb effect
 for n = 1:lengthOfInReverb
-    [outReverb(n,1),revBuffer] = Reverb(in(n,1),revBuffer,Fs,n,revDelay,revGain,revAmp,revRate);
+    [outReverb(n,1),revBuffer] = Reverb(in(n,1),revBuffer,Fs,n,revDelay,revGain,revA);
 end
 
 
